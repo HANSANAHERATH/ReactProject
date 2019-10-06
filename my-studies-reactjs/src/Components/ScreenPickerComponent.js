@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NoPageFound from './Common/NoPageFound'
 import Test from './Common/Test'
 import ContactData from '../Components/UI/ContactData'
+import TableComponent from './Common/TableComponent'
 
 class ScreenPickerComponent extends Component {
     constructor(props) {
@@ -18,6 +19,8 @@ class ScreenPickerComponent extends Component {
                 return <Test />
             case "UI":
                 return <ContactData />
+            case "Table":
+                return <TableComponent />
             default:
                 return <NoPageFound />
         }
